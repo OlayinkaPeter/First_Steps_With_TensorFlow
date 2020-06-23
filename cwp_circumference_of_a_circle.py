@@ -7,7 +7,6 @@ circumference_values  = np.array([12.57, 25.13, 50.27, 43.98, 37.70, 31.42, 6.28
 for i, r in enumerate(radius_values):
   print("Given radius to be = {}, the Circumference = {}".format(r, circumference_values[i]))
   
-
 model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[1])])
 
 model.compile(loss='mean_squared_error', optimizer='sgd')
